@@ -1,0 +1,79 @@
+.div {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  gap:10px;
+  place-content: center;
+  background: rgb(29, 29, 29);
+  text-align: center;
+}
+.calc{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.btns{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 5px;
+}
+#equals{
+  grid-column: 1/5;
+}
+.display{
+  height: 70px;
+  background: #B6C9B9;
+  color: #182e1b;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nums, .ops, .equal, .dec, .clear{
+  padding: .5rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: .3rem;
+  transition: .2s ease-in;
+  font-weight: 900;
+}
+.nums:focus, .ops:focus, .equal:focus, .dec:focus, .clear:focus{
+  transition: .2 ease-out;
+  transform: scale(0.95);
+}
+.nums{
+  background: #FFF;
+  color: #171449;
+}
+.ops{
+  background: #ffa046;
+  color: #552900;
+}
+.clear{
+  background: #c53b3b;
+  color: #4e0808;
+}
+.equal{
+  background: #587dad;
+  color: rgb(0, 37, 71);
+}
+.me{
+  text-decoration: none;
+  font-weight: bold;
+  color:rgb(74, 143, 64);
+  text-shadow: rgb(74, 143, 64) 1px 0 10px;
+  transition: .2s;
+}
+.me:hover{
+  transform: scale(1.1);
+  transition: .2s;
+}
